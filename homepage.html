@@ -1,0 +1,206 @@
+<html>
+<title>Japan Journeys</title>
+<head>
+    <link rel="stylesheet" href="../css/homepage.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
+</head>
+<body>
+    
+
+<!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li style="float: left;"><a href="../html/homepage.html"><i data-lucide="plane"></i></a></li>
+            <li><a href="../html/homepage.html">Home</a></li>
+            <li>
+                <a href="#">Destinations</a>
+                <ul>
+                    <li><a href="../html/Tokyo.html">Tokyo</a></li>
+                    <li ><a href="../HTML/nara.html">Nara</a></li>
+                    <li><a href="../html/destination.html">Kyoto</a></li>
+                    <li><a href="../html/sapporo.html">Sapporo</a></li>
+                    <li><a href="../html/osaka.html">Osaka</a></li>
+                </ul>
+            </li>
+            <li><a href="articles.html">Articles</a></li>
+            <li><a href="../html/transportation.html">Transportation</a></li>
+            <li style="float: right; text-align: center;"><a href="../html/bookmarks.html"><i data-lucide="bookmark"></i></a></li>
+        </ul>
+        <div class="searchbar">
+            <input type="text" placeholder="Search..">
+          </div>
+    </nav>
+
+
+<!--header slideshow-->
+    <div class="image-slideshow">
+        <div class="st">Japan Journeys</div>
+            <div class="cap">EXPLORE THE WONDERS OF JAPAN</div>
+        <div class="image fade">
+            <img src="../images/jpn1.jpeg">
+        </div>
+
+  
+        <div class="image fade">
+            <img src="../images/jpn2.jpeg">
+        </div>
+  
+        <div class="image fade">
+            <img src="../images/jpn3.jpeg">
+        </div>
+
+    <a class="prev" onclick="plusSlides(-1)"><i class="sbleft" data-lucide="chevron-left"></i></a>
+    <a class="next" onclick="plusSlides(1)"><i class="sbright" data-lucide="chevron-right"></i></a>
+    </div>
+
+    <script>
+    var slideIndex = 1;
+    var timer = null;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        clearTimeout(timer);
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        clearTimeout(timer);
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("image");
+        var dots = document.getElementsByClassName("dot");
+        if (n==undefined){n = ++slideIndex}
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+        }
+
+        slides[slideIndex-1].style.display = "block";
+
+        timer = setTimeout(showSlides, 5000);
+    }
+    </script>
+
+
+
+<!--why / your next adventure awaits-->
+<div class="kyotohistory">
+    <div class="kyotohistorycontent">
+    <img class="kyotohistoryimage" src="https://images.pexels.com/photos/3408354/pexels-photo-3408354.jpeg">
+        <div class="kyotohistorytext">
+        <h2>Your Next Adventure Awaits!</h2>
+        <p>Kyoto, once known as Heian-kyō, served as the imperial capital of Japan for over a thousand years, from 794 AD until the capital was relocated to Tokyo in 1868. This period, known as the Heian period, was characterized by remarkable cultural and artistic flourishing, with Kyoto at its heart. During this time, the city witnessed the rise of Japanese literature, such as the famous "Tale of Genji" by Murasaki Shikibu, and the development of traditional arts like tea ceremony, ikebana (flower arranging), and Noh theater.<br><br>
+        Throughout its history, Kyoto faced numerous challenges, including wars, fires, and political upheavals. However, it always managed to rebuild and preserve its cultural heritage. The city's layout reflects its historical significance, with its grid-like streets designed in accordance with traditional Chinese geomancy principles. Many of Kyoto's iconic landmarks, including Kinkaku-ji (the Golden Pavilion), Kiyomizu-dera Temple, and Nijo Castle, date back to this era, offering glimpses into the city's illustrious past.<br><br>    
+        In the modern era, Kyoto has evolved into a vibrant blend of tradition and innovation. While it continues to honor its cultural legacy through annual festivals, rituals, and preservation efforts, it also thrives as a center for technology, education, and tourism. Today, Kyoto stands as a testament to Japan's enduring spirit, where ancient traditions coexist harmoniously with contemporary life, inviting visitors from around the world to explore its timeless beauty and cultural riches.<br><br></p>
+        </div>
+    </div>
+</div>
+
+
+
+<!--History / popular destinations -->
+<div class="homepagehistory">
+    <div class="homepagehistorycontent">
+    <img class="homepagehistoryimage" src="https://images.pexels.com/photos/2187427/pexels-photo-2187427.jpeg">
+            <div class="homepagehistorytext">
+                <h2>Popular Destinations</h2>
+                    <p class="popcity"><a  style="text-decoration: none;color: black;" href="../HTML/tokyo.html">Tokyo</p></a>
+                        <p class="popcitysub">With its towering skyscrapers, bustling streets, and neon-lit nightlife, Japan's capital city is a vibrant metropolis that seamlessly blends tradition and innovation.</p>
+                    <p class="popcity"><a style="text-decoration: none;color: black;" href="../html/destination.html">Kyoto</p></a>
+                        <p class="popcitysub">Steeped in history and culture, Kyoto invites visitors to explore its ancient temples, stroll through serene bamboo groves, and experience the grace of traditional tea ceremonies.</p>
+                    <p class="popcity"><a style="text-decoration: none;color: black;" href="../html/osaka.html">Osaka</p></a>
+                        <p class="popcitysub">Known as Japan's culinary capital, Osaka tantalizes the taste buds with its street food stalls, lively markets, and hearty local dishes like takoyaki and okonomiyaki.</p>
+                    <p class="popcity"><a style="text-decoration: none;color: black;" href="../html/sapporo.html">Sapporo</p></a>
+                        <p class="popcitysub">Nestled amidst Hokkaido's snowy landscapes, Sapporo welcomes travelers with its world-famous beer, annual Snow Festival, and outdoor adventures such as skiing and snowboarding.</p>
+                    <p class="popcity"><a  style="text-decoration: none;color: black;" href="../HTML/nara.html">Nara</p></a>
+                        <p class="popcitysub">Home to majestic temples, tranquil gardens, and friendly deer that roam its streets, Nara offers a serene escape into Japan's ancient past.</p>
+            </div>
+    </div>
+</div>
+
+
+
+
+
+
+<!--gallery-->
+<div>    
+    <h2 class="homepagegallerytitle">Gallery</h2>
+</div>
+<div class="homepagegalleryrow">
+    <div class="homepagegallerycolumn">
+        <img src="https://images.pexels.com/photos/161251/senso-ji-temple-japan-kyoto-landmark-161251.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+        <img src="https://images.pexels.com/photos/1673978/pexels-photo-1673978.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+        <img src="https://images.pexels.com/photos/1498273/pexels-photo-1498273.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+    </div>
+    <div class="homepagegallerycolumn">
+        <img src="https://images.pexels.com/photos/1191377/pexels-photo-1191377.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+        <img src="https://images.pexels.com/photos/1628061/pexels-photo-1628061.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+        <img src="https://images.pexels.com/photos/3408353/pexels-photo-3408353.jpeg?auto=compress&cs=tinysrgb&w=600">
+    </div>
+    <div class="homepagegallerycolumn">
+        <img src="https://images.pexels.com/photos/23735/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+        <img src="https://images.pexels.com/photos/2758567/pexels-photo-2758567.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+        <img src="https://images.pexels.com/photos/1169935/pexels-photo-1169935.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+    </div>
+    <div class="homepagegallerycolumn">
+        <img src="https://images.pexels.com/photos/2156400/pexels-photo-2156400.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+        <img src="https://images.pexels.com/photos/2385210/pexels-photo-2385210.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+        <img src="https://images.pexels.com/photos/2187603/pexels-photo-2187603.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+    </div>
+</div>
+</div>
+
+
+
+
+<footer>
+    <div class="footergridcontainer">
+        <div class="footergridcol">
+            <p><b>Destinations</b></p>
+            <p class="footertext"><a href="../HTML/tokyo.html">Tokyo</a></p>
+            <p class="footertext"><a href="../HTML/destination.html">Kyoto</a></p>
+            <p class="footertext"><a href="../HTML/osaka.html">Osaka</a></p>
+            <p class="footertext"><a href="../HTML/sapporo.html">Sapporo</a></p>
+            <p class="footertext"><a href="../HTML/nara.html">Nara</a></p>
+        </div>
+
+        <div class="footergridcol">
+            <p class="footertext"><b><a href="../HTML/articles.html">Articles</a></b></p>
+            <p class="footertext"><a href="../HTML/articles.html">Latest</a></p>
+            <p class="footertext"><a href="../HTML/articles.html">More News</a></p>
+            <p class="footertext"><b><a href="../HTML/transportation.html">Transportation</a></b></p>
+        </div>
+
+        <div class="footergridcol">
+            <p><b>Our Socials</b></p>
+            <p><a href=""><i data-lucide="instagram" style="color: #fff;"></i></a>&nbsp;&nbsp; <a href=""><i data-lucide="twitter" style="color: white;"></i></a>&nbsp; <a href=""><i data-lucide="facebook" style="color: white;"></i></a>&nbsp; <a href=""><svg  xmlns="http://www.w3.org/2000/svg"  width="21"  height="21"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-tiktok"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M21 7.917v4.034a9.948 9.948 0 0 1 -5 -1.951v4.5a6.5 6.5 0 1 1 -8 -6.326v4.326a2.5 2.5 0 1 0 4 2v-11.5h4.083a6.005 6.005 0 0 0 4.917 4.917z" /></svg></a></p>
+            <p>Copyright © Maxine Cabigquez. All rights reserved.</p>
+            <p><b>Subscribe</b></p>
+            <p>Sign up to our newsletter!</p>
+                <div class="nltext">
+                <input type="email" placeholder="Email">
+              </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+    lucide.createIcons();
+</script>
+
+
+
+
+
+
+
+</body>
+</html>

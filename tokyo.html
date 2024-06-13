@@ -1,0 +1,233 @@
+<html>
+<head>
+    <title>Tokyo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/tokyo.css">
+    <link rel="stylesheet" href="../CSS/homepage.css">
+</head>
+
+
+
+<!-- Navigation Bar -->
+<nav class="navbar">
+    <ul>
+        <li style="float: left;"><a href="../html/homepage.html"><i data-lucide="plane"></i></a></li>
+        <li><a href="../html/homepage.html">Home</a></li>
+        <li>
+            <a href="#">Destinations</a>
+            <ul>
+                <li><a href="../HTML/tokyo.html">Tokyo</a></li>
+                <li ><a href="../HTML/nara.html">Nara</a></li>
+                <li><a href="../html/destination.html">Kyoto</a></li>
+                <li><a href="sapporo.html">Sapporo</a></li>
+                <li><a href="../HTML/osaka.html">Osaka</a></li>
+            </ul>
+        </li>
+        <li><a href="articles.html">Articles</a></li>
+        <li><a href="../HTML/transportation.html">Transportation</a></li>
+        <li style="float: right; text-align: center;"><a href="../HTML/bookmarks.html"><i data-lucide="bookmark"></i></a></li>
+    </ul>
+    <div class="searchbar">
+        <input type="text" placeholder="Search..">
+      </div>
+</nav>
+
+
+
+<!--header slideshow-->
+<div class="image-slideshow">
+    <div class="st">Tokyo</div>
+        <div class="cap">Tokyo, Japan's cosmopolitan capital, epitomizes the perfect fusion of tradition and contemporary dynamism, captivating visitors with its iconic landmarks and bustling urban energy.</div>
+    <div class="image fade">
+        <img src="https://media.cntraveler.com/photos/62ab85a86df361f5801fd45b/16:9/w_1920%2Cc_limit/Tokyo_GettyImages-1319747119.jpg">
+    </div>
+
+
+    <div class="image fade">
+        <img src="https://www.gotokyo.org/en/destinations/southern-tokyo/images/499_0354_2.jpg">
+    </div>
+
+    <div class="image fade">
+        <img src="https://media.cntraveler.com/photos/60341fbad7bd3b27823c9db2/16:9/w_2560%2Cc_limit/Tokyo-2021-GettyImages-1208124099.jpg">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)"><i class="sbleft" data-lucide="chevron-left"></i></a>
+    <a class="next" onclick="plusSlides(1)"><i class="sbright" data-lucide="chevron-right"></i></a>
+</div>
+
+<script>
+var slideIndex = 1;
+var timer = null;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+    clearTimeout(timer);
+    showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+    clearTimeout(timer);
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("image");
+    var dots = document.getElementsByClassName("dot");
+    if (n==undefined){n = ++slideIndex}
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+    }
+
+    slides[slideIndex-1].style.display = "block";
+
+    timer = setTimeout(showSlides, 5000);
+}
+</script>
+
+
+<!--History-->
+<div class="tokyohistory">
+    <div class="tokyohistorycontent">
+    <img class="tokyohistoryimage" src="https://www.japan-experience.com/sites/default/files/images/content_images/edo-castle-2017-4.jpg">
+        <div class="tokyohistorytext">
+        <h2>History of Tokyo</h2>
+        <p>Tokyo, previously known as Edo, held the prestigious title of Japan's imperial capital for over two and a half centuries, from 1603 until the Meiji Restoration in 1868, when the capital shifted to Tokyo. This transformative period witnessed Tokyo's emergence as a bustling center of political power, culture, and commerce. The city flourished under the Tokugawa shogunate, experiencing a cultural renaissance marked by the development of kabuki theater, ukiyo-e woodblock prints, and vibrant culinary traditions. <br></br>
+            Throughout its history, Tokyo encountered numerous trials, including devastating earthquakes, fires, and wartime destruction. Yet, it continuously reinvented itself, blending resilience with innovation. Tokyo's urban landscape bears witness to its storied past, with a mix of ancient temples, modern skyscrapers, and bustling neighborhoods reflecting its diverse heritage. Landmarks like the Imperial Palace, Sensō-ji Temple, and the Meiji Shrine stand as testaments to Tokyo's enduring legacy.<br></br>
+            In the contemporary era, Tokyo has evolved into a dynamic metropolis at the forefront of technology, fashion, and entertainment. While it embraces modernity with its neon-lit streets and futuristic architecture, Tokyo remains deeply rooted in tradition, evident in its timeless tea ceremonies, cherry blossom festivals, and sumo wrestling tournaments. Today, Tokyo epitomizes Japan's cultural dynamism, where ancient customs seamlessly blend with cutting-edge innovation, inviting visitors to immerse themselves in its vibrant energy and rich history.<br><br></p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div class="gridsubtitle"><h2>Discover your Options</h2></div>
+<div class="grid-container">
+    <div class="grid-item">
+        <div class="grid_image-wrap"><a href="https://blog.japanwondertravel.com/10-nature-spots-in-tokyo-11677"><img class="gridimage" src="https://blog.japanwondertravel.com/wp-content/uploads/2020/01/23155916_m-1200x800.jpg"></a>
+    </div>
+    <div class="undercap">
+    <div class="gridtitle"><a style="text-decoration: none; color: black;">Nature & Outdoor</a></div>
+        </div>
+    </div>
+
+    
+    <div class="grid-item">
+        <div class="grid_image-wrap"><a href="https://www.petitfute.co.uk/v53628-tokyo/actualite/m4-idees-week-end-et-vacances/a16343-tokyo-entre-tradition-et-modernite.html"><img class="gridimage" src="https://www.petitfute.co.uk/medias/mag/16343/originale/216735-tokyo-tokyo-entre-tradition.jpg"></a>
+            <div class="grid_image-content">
+            </div>
+        </div>
+        <div class="undercap">
+            <div class="gridtitle"><a style="text-decoration: none; color: black;">Traditions</a></div>
+        </div>
+    </div>
+
+    <div class="grid-item">
+        <div class="grid_image-wrap"><a href="https://www.agoda.com/travel-guides/japan/tokyo/tokyo-food-101-essential-japanese-food-traditional-drinks/"><img class="gridimage" src="https://www.agoda.com/wp-content/uploads/2018/07/Experience-Tokyo_food-and-drink_Sake_Japan.jpg"></a>
+        </div>
+        <div class="undercap">
+            <div class="gridtitle"><a style="text-decoration: none; color: black;">Food & Drink</a></div>
+                </div>
+    </div> 
+
+    <div class="grid-item">
+        <div class="grid_image-wrap"><a href="https://dintravel.com/tokyo-now-marvel-at-the-stunning-art-and-culture-heritage/"><img class="gridimage" src="https://dintravel.com/storage/2023/10/Senso-Ji-Temple-at-Sunset-Tokyo.jpg"></a>
+        </div>
+        <div class="undercap">
+            <div class="gridtitle"><a style="text-decoration: none; color: black;">Art & Culture</a></div>
+                </div>
+    </div>
+
+    <div class="grid-item">
+        <div class="grid_image-wrap"><a href="https://www.timeout.com/tokyo/things-to-do/the-least-crowded-places-in-tokyo"><img class="gridimage" src="https://media.timeout.com/images/105658800/750/562/image.webp"></a>
+        </div>
+        <div class="undercap">
+            <div class="gridtitle"><a style="text-decoration: none; color: black;">Relaxation</a></div>
+                </div>
+    </div>
+
+    <div class="grid-item">
+        <div class="grid_image-wrap"><a href="https://blog.japanwondertravel.com/best-festivals-in-tokyo-37530#google_vignette"><img class="gridimage" src="https://blog.japanwondertravel.com/wp-content/uploads/2022/11/sanja-matsuri-1200x800.jpg"></a>
+        </div>
+        <div class="undercap">
+            <div class="gridtitle"><a href="https://blog.japanwondertravel.com/best-festivals-in-tokyo-37530#google_vignette" style="text-decoration: none; color: black;">Events</a></div>
+                </div>
+    </div>  
+
+
+
+  </div>
+</div>
+
+
+
+
+<!--Make them clickable to each respective destinations page-->
+<div class="tokyomapdiv">
+<h1>Major Attractions in Tokyo</h1>
+       <iframe align="right" class="tokyomapcontainer" src="https://www.google.com/maps/d/embed?mid=1Sacpp9a3_FG5iUG7Z9fLGGyefTE&hl=en&ehbc=2E312F" width="640" height="480"></iframe>
+        <p class="tokyomaptitle">Sensoji Temple</p>
+            <p class="tokyomapsub">The Sensoji Temple is a Buddhist Temple, located in Asakusa, is one of the largest temples in Tokyo. Its colorfull architecture and significance makes it a very highly approachable temple.</p>
+        <p class="tokyomaptitle">Ghibli Museum</p>
+            <p class="tokyomapsub">The Ghibli Museum is a museum to one of the most famous animation studios, Miyazaki Hayao's Studio Ghibli. It is a "must see" for any fans of Miyazaki Hayao.</p>
+        <p class="tokyomaptitle">Rikugi-en</p>
+            <p class="tokyomapsub">The Rikugi-en is considered one of the most beautiful gardens in all of Tokyo. The garden takes over an hour to walk through, as you go through forests and open lawns.</p>
+</div>
+
+
+
+<footer>
+    <div class="footergridcontainer">
+        <div class="footergridcol">
+            <p><b>Destinations</b></p>
+            <p>Tokyo</p>
+            <p>Kyoto</p>
+            <p>Osaka</p>
+            <p>Sapporo</p>
+            <p>Nara</p>
+        </div>
+
+        <div class="footergridcol">
+            <p><b>Articles</b></p>
+            <p>Latest</p>
+            <p>More News</p>
+        </div>
+
+        <div class="footergridcol">
+            <p><b>Transportation</b></p>
+            <p>Car</p>
+            <p>Trains</p>
+            <p>Car Rentals</p>
+            <p>Railway</p>
+        </div>
+
+        <div class="footergridcol">
+            <p><b>Our Socials</b></p>
+            <p><a href=""><i data-lucide="instagram" style="color: #fff;"></i></a>&nbsp;&nbsp; <a href=""><i data-lucide="twitter" style="color: white;"></i></a>&nbsp; <a href=""><i data-lucide="facebook" style="color: white;"></i></a>&nbsp; <a href=""><svg  xmlns="http://www.w3.org/2000/svg"  width="21"  height="21"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-tiktok"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M21 7.917v4.034a9.948 9.948 0 0 1 -5 -1.951v4.5a6.5 6.5 0 1 1 -8 -6.326v4.326a2.5 2.5 0 1 0 4 2v-11.5h4.083a6.005 6.005 0 0 0 4.917 4.917z" /></svg></a></p>
+            <p>Copyright © Group 3. All rights reserved.</p>
+            <p>© Uriel Soto</p>
+            <p><b>Subscribe</b></p>
+            <p>Sign up to our newsletter!</p>
+                <div class="nltext">
+                <input type="email" placeholder="Email">
+              </div>
+        </div>
+    </div>
+    
+  </footer>
+
+
+
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+    lucide.createIcons();
+</script>
+
+
+
+</html>

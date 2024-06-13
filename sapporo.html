@@ -1,0 +1,233 @@
+<html>
+<head>
+    <title>Sapporo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/homepage.css">
+    <link rel="stylesheet" href="../CSS/tokyo.css">
+</head>
+
+
+
+<!-- Navigation Bar -->
+<nav class="navbar">
+    <ul>
+        <li style="float: left;"><a href="../html/homepage.html"><i data-lucide="plane"></i></a></li>
+        <li><a href="../html/homepage.html">Home</a></li>
+        <li>
+            <a href="#">Destinations</a>
+            <ul>
+                <li><a href="../HTML/tokyo.html">Tokyo</a></li>
+                <li ><a href="../HTML/nara.html">Nara</a></li>
+                <li><a href="../html/destination.html">Kyoto</a></li>
+                <li><a href="../HTML/sapporo.html">Sapporo</a></li>
+                <li><a href="../HTML/osaka.html">Osaka</a></li>
+            </ul>
+        </li>
+        <li><a href="../HTML/articles.html">Articles</a></li>
+        <li><a href="../HTML/transportation.html">Transportation</a></li>
+        <li style="float: right; text-align: center;"><a href="../HTML/bookmarks.html"><i data-lucide="bookmark"></i></a></li>
+    </ul>
+    <div class="searchbar">
+        <input type="text" placeholder="Search..">
+      </div>
+</nav>
+
+
+<!--header slideshow-->
+<div class="image-slideshow">
+    <div class="st">Sapporo</div>
+        <div class="cap">A winter wonderland and summer haven, Sapporo is all about outdoor fun, great food and famous beer.</div>
+    <div class="image fade">
+        <img src="https://images.unsplash.com/photo-1619338360476-37195f14909e?q=80&w=1775&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+    </div>
+
+
+    <div class="image fade">
+        <img src="https://images.unsplash.com/photo-1696052650163-c605f19a27c7?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+    </div>
+
+    <div class="image fade">
+        <img src="https://www.japantimes.co.jp/uploads/imported_images/uploads/2022/01/np_file_136119.jpeg">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)"><i class="sbleft" data-lucide="chevron-left"></i></a>
+    <a class="next" onclick="plusSlides(1)"><i class="sbright" data-lucide="chevron-right"></i></a>
+</div>
+
+<script>
+var slideIndex = 1;
+var timer = null;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+    clearTimeout(timer);
+    showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+    clearTimeout(timer);
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("image");
+    var dots = document.getElementsByClassName("dot");
+    if (n==undefined){n = ++slideIndex}
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+    }
+
+    slides[slideIndex-1].style.display = "block";
+
+    timer = setTimeout(showSlides, 5000);
+}
+</script>
+
+
+<!--History-->
+<div class="kyotohistory">
+    <div class="kyotohistorycontent">
+    <img class="kyotohistoryimage" src="https://www.japantimes.co.jp/wp-content/uploads/2017/03/n-sapporo-z-20170322.jpg">
+        <div class="kyotohistorytext">
+        <h2>History of Sapporo</h2>
+        <p>Sapporo sits on the west coast of Hokkaido, the northernmost of Japan's islands. It was established in 1857 with a population of just seven people, but today boasts a population of nearly two million. It is the capital of the Hokkaido Prefecture.</p>
+
+                    <p>Sapporo gained worldwide recognition in 1972 as the first city in Asia to host the Winter Olympics. It also served as one of the host cities for the Rugby World Cup 2019, with matches played in the Sapporo Dome.</p>
+                        
+                    <p>Sapporo is renowned for its formidable ski pistes (a homage to the Winter Olympics), ramen noodle consumption, and for being the birthplace of the oldest brand of beer in Japan.</p>
+                        
+                    <p>Japan's fifth largest city offers many activities to enjoy and sights to observe - most of which depend entirely on the time of year you visit. Winter brings lashings of snow and annual ski festivals, while summer brings sprouting flowers and beer festivals in lush green gardens.</p>
+                        
+                    <p>No matter when you visit, get ready to embrace the very best of Japanese culture, soak up the historical sites, and dine on traditional Sapporo cuisine.</p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!--things to do Jailline's hover MAKE SURE TO CHANGE LINKS-->
+<div class="gridsubtitle"><h2>Discover your Options</h2></div>
+<div class="grid-container">
+    <div class="grid-item">
+        <div class="grid_image-wrap"><a href="https://visit.sapporo.travel/discover/nature/"><img class="gridimage" src="https://images.unsplash.com/photo-1701144957549-938b7d727897?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"></a>
+    </div>
+    <div class="undercap">
+    <div class="gridtitle"><a href="https://visit.sapporo.travel/discover/nature/" style="text-decoration: none; color: black;">Nature & Outdoor</a></div>
+        </div>
+    </div>
+
+    
+    <div class="grid-item">
+        <div class="grid_image-wrap"><a href="https://theculturetrip.com/asia/japan/articles/6-traditions-only-locals-in-hokkaido-can-understand"><img class="gridimage" src="https://hokkaidoguide.com/wp-content/uploads/2017/07/126A2222-scaled.jpg"></a>
+            <div class="grid_image-content">
+            </div>
+        </div>
+        <div class="undercap">
+            <div class="gridtitle"><a href="https://theculturetrip.com/asia/japan/articles/6-traditions-only-locals-in-hokkaido-can-understand" style="text-decoration: none; color: black;">Traditions</a></div>
+        </div>
+    </div>
+
+    <div class="grid-item">
+        <div class="grid_image-wrap"><a href="https://www.byfood.com/blog/sapporo/what-to-eat-in-sapporo"><img class="gridimage" src="https://norecipes.com/wp-content/uploads/2020/09/japanese-pork-bowl-003-1200x800.jpg"></a>
+        </div>
+        <div class="undercap">
+            <div class="gridtitle"><a href="https://www.byfood.com/blog/sapporo/what-to-eat-in-sapporo" style="text-decoration: none; color: black;">Food & Drink</a></div>
+                </div>
+    </div> 
+
+    <div class="grid-item">
+        <div class="grid_image-wrap"><a href="https://visit.sapporo.travel/discover/art-culture/"><img class="gridimage" src="https://images.unsplash.com/photo-1700228641393-6ed2a7585310?q=80&w=1775&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"></a>
+        </div>
+        <div class="undercap">
+            <div class="gridtitle"><a href="https://visit.sapporo.travel/discover/art-culture/" style="text-decoration: none; color: black;">Art & Culture</a></div>
+                </div>
+    </div>
+
+    <div class="grid-item">
+        <div class="grid_image-wrap"><a href="https://www.tripadvisor.com/Attractions-g298560-Activities-c40-Sapporo_Hokkaido.html"><img class="gridimage" src="https://japan-skiguide.com/realimg_report/425/parts_15432.jpg"></a>
+        </div>
+        <div class="undercap">
+            <div class="gridtitle"><a href="https://www.tripadvisor.com/Attractions-g298560-Activities-c40-Sapporo_Hokkaido.html" style="text-decoration: none; color: black;">Relaxation</a></div>
+                </div>
+    </div>
+
+    <div class="grid-item">
+        <div class="grid_image-wrap"><a href="https://www.sapporo.travel/en/event/event-list/"><img class="gridimage" src="https://travel.rakuten.com/contents/sites/contents/files/styles/max_1300x1300/public/2023-12/sapporo-snow-festival-guide_1.jpg?itok=kYGwI45o"></a>
+        </div>
+        <div class="undercap">
+            <div class="gridtitle"><a href="https://www.sapporo.travel/en/event/event-list/" style="text-decoration: none; color: black;">Events</a></div>
+                </div>
+    </div>  
+
+
+
+  </div>
+</div>
+
+
+
+
+<!--Make them clickable to each respective destinations page-->
+<div class="kyotomapdiv">
+<h1>Major Attractions in Sapporo</h1>
+       <iframe align="right" class="kyotomapcontainer" src="https://www.google.com/maps/d/embed?mid=1oN2QqnOlLrt5Vr2BGD5P9dTZj7U&hl=en_US&ehbc=2E312F">
+        </iframe> 
+        <p class="kyotomaptitle">Sapporo Station</p>
+            <p class="kyotomapsub">Sapporo Station is a modern and extensive transportation hub that seamlessly connects to a variety of shops and dining options.</p>
+        <p class="kyotomaptitle">Odori Park</p>
+            <p class="kyotomapsub">A symbol of Sapporo's urban beauty, Odori Park stretches for 1.5 kilometers through the heart of the city. If you could picture an oasis in the middle of a city, Odori Park is the perfect example.</p>
+        <p class="kyotomaptitle">Sapporo TV Tower</p>
+            <p class="kyotomapsub">Located at the eastern end of Odori Park, Sapporo TV Tower is the beacon of the city. You can take the elevator to the observation deck and enjoy a panoramic view of the city, with the mountains in the background. During the evening, you can enjoy a magical view of the illuminated city.</p>
+</div>
+
+
+
+<footer>
+    <div class="footergridcontainer">
+        <div class="footergridcol">
+            <p><b>Destinations</b></p>
+            <p class="footertext"><a href="../HTML/tokyo.html">Tokyo</a></p>
+            <p class="footertext"><a href="../HTML/destination.html">Kyoto</a></p>
+            <p class="footertext"><a href="../HTML/osaka.html">Osaka</a></p>
+            <p class="footertext"><a href="../HTML/sapporo.html">Sapporo</a></p>
+            <p class="footertext"><a href="../HTML/nara.html">Nara</a></p>
+        </div>
+
+        <div class="footergridcol">
+            <p class="footertext"><b><a href="../HTML/articles.html">Articles</a></b></p>
+            <p class="footertext"><a href="../HTML/articles.html">Latest</a></p>
+            <p class="footertext"><a href="../HTML/articles.html">More News</a></p>
+            <p class="footertext"><b><a href="../HTML/transportation.html">Transportation</a></b></p>
+        </div>
+
+        <div class="footergridcol">
+            <p><b>Our Socials</b></p>
+            <p><a href=""><i data-lucide="instagram" style="color: #fff;"></i></a>&nbsp;&nbsp; <a href=""><i data-lucide="twitter" style="color: white;"></i></a>&nbsp; <a href=""><i data-lucide="facebook" style="color: white;"></i></a>&nbsp; <a href=""><svg  xmlns="http://www.w3.org/2000/svg"  width="21"  height="21"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-tiktok"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M21 7.917v4.034a9.948 9.948 0 0 1 -5 -1.951v4.5a6.5 6.5 0 1 1 -8 -6.326v4.326a2.5 2.5 0 1 0 4 2v-11.5h4.083a6.005 6.005 0 0 0 4.917 4.917z" /></svg></a></p>
+            <p>Copyright © Jailline Miranda. All rights reserved.</p>
+            <p><b>Subscribe</b></p>
+            <p>Sign up to our newsletter!</p>
+                <div class="nltext">
+                <input type="email" placeholder="Email">
+              </div>
+        </div>
+    </div>
+    
+  </footer>
+
+
+
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+    lucide.createIcons();
+</script>
+
+
+
+</html>
+

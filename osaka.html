@@ -1,0 +1,224 @@
+<html>
+<head>
+    <title>Osaka</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/homepage.css">
+    <link rel="stylesheet" href="../CSS/tokyo.css">
+</head>
+
+
+
+<!-- Navigation Bar -->
+<nav class="navbar">
+    <ul>
+        <li style="float: left;"><a href="../html/homepage.html"><i data-lucide="plane"></i></a></li>
+        <li><a href="../html/homepage.html">Home</a></li>
+        <li>
+            <a href="#">Destinations</a>
+            <ul>
+                <li><a href="../HTML/tokyo.html">Tokyo</a></li>
+                <li ><a href="../HTML/nara.html">Nara</a></li>
+                <li><a href="../html/destination.html">Kyoto</a></li>
+                <li><a href="../HTML/sapporo.html">Sapporo</a></li>
+                <li><a href="../HTML/osaka.html">Osaka</a></li>
+            </ul>
+        </li>
+        <li><a href="../HTML/articles.html">Articles</a></li>
+        <li><a href="../HTML/transportation.html">Transportation</a></li>
+        <li style="float: right; text-align: center;"><a href="../HTML/bookmarks.html"><i data-lucide="bookmark"></i></a></li>
+    </ul>
+    <div class="searchbar">
+        <input type="text" placeholder="Search..">
+      </div>
+</nav>
+
+
+<!--header slideshow-->
+<div class="image-slideshow">
+    <div class="st">Osaka</div>
+        <div class="cap">Osaka, bustling with vibrant street life, offers tasty culinary delights, historical landmarks, and dynamic entertainment.</div>
+    <div class="image fade">
+        <img src="https://images.unsplash.com/photo-1584505489290-96eb4e406d08?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+    </div>
+
+
+    <div class="image fade">
+        <img src="https://cdn.pixabay.com/photo/2020/01/06/05/29/food-4744616_1280.jpg">
+    </div>
+
+    <div class="image fade">
+        <img src="https://images.unsplash.com/photo-1547647496-b2d16f4fdb69?q=80&w=2848&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)"><i class="sbleft" data-lucide="chevron-left"></i></a>
+    <a class="next" onclick="plusSlides(1)"><i class="sbright" data-lucide="chevron-right"></i></a>
+</div>
+
+<script>
+var slideIndex = 1;
+var timer = null;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+    clearTimeout(timer);
+    showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+    clearTimeout(timer);
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("image");
+    var dots = document.getElementsByClassName("dot");
+    if (n==undefined){n = ++slideIndex}
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+    }
+
+    slides[slideIndex-1].style.display = "block";
+
+    timer = setTimeout(showSlides, 5000);
+}
+</script>
+
+
+<!--History-->
+<div class="kyotohistory">
+    <div class="kyotohistorycontent">
+    <img class="kyotohistoryimage" src="https://images.unsplash.com/photo-1590559899731-a382839e5549?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+        <div class="kyotohistorytext">
+        <h2>History of Osaka</h2>
+        <p>Osaka, Japan, boasts a rich and diverse history that dates back centuries. Initially established as a capital city during the Asuka and Nara periods (592-794 AD), Osaka flourished as a vital economic and political hub due to its strategic location at the mouth of the Yodo River. During the Sengoku period (1467-1603), Osaka became a battleground for powerful feudal lords vying for control, leading to the construction of imposing fortifications like Osaka Castle, symbolizing the city's resilience.<br><br>
+            In the Edo period (1603-1868), Osaka further solidified its status as the "nation's kitchen" (tenka no daidokoro) with a thriving merchant class and bustling marketplaces, contributing to the city's cultural and economic prosperity. This era witnessed the emergence of Osaka as a center for arts, theater, and culinary delights, epitomized by the vibrant entertainment district of Dotonbori, which continues to captivate visitors with its iconic neon lights and delectable street food.<br><br>    
+            The city's remarkable transformation into a global metropolis, characterized by towering skyscrapers and cutting-edge technology, reflects Osaka's enduring spirit of innovation and adaptability. Today, as Japan's second-largest city, Osaka continues to thrive as a vibrant cultural and economic center, celebrated for its unique blend of ancient traditions and modernity, making it a captivating destination for travelers from around the world.<br><br></p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!--things to do Jailline's hover MAKE SURE TO CHANGE LINKS-->
+<div class="gridsubtitle"><h2>Discover your Options</h2></div>
+<div class="grid-container">
+    <div class="grid-item">
+        <div class="grid_image-wrap"><a href="https://osaka-info.jp/en/spot/nature/" target="blank"><img class="gridimage" src="https://images.unsplash.com/photo-1701001909887-b49715aebe95?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"></a>
+    </div>
+    <div class="undercap">
+    <div class="gridtitle"><a href="https://osaka-info.jp/en/spot/nature/" style="text-decoration: none; color: black;">Nature & Outdoor</a></div>
+        </div>
+    </div>
+
+    
+    <div class="grid-item">
+        <div class="grid_image-wrap"><a href="https://osaka-info.jp/en/osaka/basic/history-culture/"  target="blank"><img class="gridimage" src="https://images.unsplash.com/photo-1589035526958-bd6821aca8be?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fG9zYWthJTIwamFwYW4lMjB0cmFkaXRpb258ZW58MHx8MHx8fDA%3D"></a>
+            <div class="grid_image-content">
+            </div>
+        </div>
+        <div class="undercap">
+            <div class="gridtitle"><a href="https://alljapantours.com/japan/travel/when-to-go/Cherry-Blossoms-in-Japan/" style="text-decoration: none; color: black;">Traditions</a></div>
+        </div>
+    </div>
+
+    <div class="grid-item">
+        <div class="grid_image-wrap"><a href="https://insideosaka.com/what-to-eat-in-osaka/" target="blank"><img class="gridimage" src="https://images.unsplash.com/photo-1569740392698-59e8ce4f47cc?q=80&w=3131&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"></a>
+        </div>
+        <div class="undercap">
+            <div class="gridtitle"><a href="https://insideosaka.com/what-to-eat-in-osaka/" style="text-decoration: none; color: black;">Food & Drink</a></div>
+                </div>
+    </div> 
+
+    <div class="grid-item">
+        <div class="grid_image-wrap"><a href="https://osaka-info.jp/en/spot/art/" target="blank"><img class="gridimage" src="https://images.unsplash.com/photo-1626275515418-ae406fa3da38?q=80&w=3267&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"></a>
+        </div>
+        <div class="undercap">
+            <div class="gridtitle"><a href="https://osaka-info.jp/en/spot/art/" style="text-decoration: none; color: black;">Art & Culture</a></div>
+                </div>
+    </div>
+
+    <div class="grid-item">
+        <div class="grid_image-wrap"><a href="https://osaka-info.jp/en/special/features-spa-hotspring-osaka/" target="blank"><img class="gridimage" src="https://images.unsplash.com/photo-1540396772767-902c8c7eb326?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"></a>
+        </div>
+        <div class="undercap">
+            <div class="gridtitle"><a href="https://osaka-info.jp/en/special/features-spa-hotspring-osaka/" style="text-decoration: none; color: black;">Relaxation</a></div>
+                </div>
+    </div>
+
+    <div class="grid-item">
+        <div class="grid_image-wrap"><a href="https://en.japantravel.com/events/osaka" target="blank"><img class="gridimage" src="https://images.unsplash.com/photo-1524413840807-0c3cb6fa808d?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8b3Nha2ElMjBqYXBhbiUyMGV2ZW50fGVufDB8fDB8fHww"></a>
+        </div>
+        <div class="undercap">
+            <div class="gridtitle"><a href="https://en.japantravel.com/events/osaka" style="text-decoration: none; color: black;">Events</a></div>
+                </div>
+    </div>  
+
+
+
+  </div>
+</div>
+
+
+<div class="kyotomapdiv">
+<h1>Major Attractions in Osaka</h1>
+       <iframe align="right" class="kyotomapcontainer" src="https://www.google.com/maps/d/embed?mid=1koZgRLiZhUmLVRwTggQyqu6rWuY&hl=en&ehbc=2E312F">
+        </iframe> 
+        <p class="kyotomaptitle">Osaka Castle</p>
+            <p class="kyotomapsub">A symbol of Osaka's rich history, this imposing fortress showcases stunning architecture and offers panoramic views of the city from its observation deck, providing visitors with a glimpse into Japan's feudal past.</p>
+        <p class="kyotomaptitle">Dotonbori</p>
+            <p class="kyotomapsub">Known as the heart of Osaka's entertainment district, Dotonbori is famous for its vibrant nightlife, bustling streets lined with neon lights, and mouthwatering street food stalls serving local delicacies such as takoyaki and okonomiyaki.</p>
+        <p class="kyotomaptitle">Universal Studios Japan</p>
+            <p class="kyotomapsub">A haven for thrill-seekers and movie enthusiasts alike, this world-class theme park features exhilarating rides based on blockbuster films, immersive attractions, and lively entertainment, making it a must-visit destination.</p>
+</div>
+
+
+
+<footer>
+    <div class="footergridcontainer">
+        <div class="footergridcol">
+            <p><b>Destinations</b></p>
+            <p class="footertext"><a href="../HTML/tokyo.html">Tokyo</a></p>
+            <p class="footertext"><a href="../HTML/destination.html">Kyoto</a></p>
+            <p class="footertext"><a href="../HTML/osaka.html">Osaka</a></p>
+            <p class="footertext"><a href="../HTML/sapporo.html">Sapporo</a></p>
+            <p class="footertext"><a href="../HTML/nara.html">Nara</a></p>
+        </div>
+
+        <div class="footergridcol">
+            <p class="footertext"><b><a href="../HTML/articles.html">Articles</a></b></p>
+            <p class="footertext"><a href="../HTML/articles.html">Latest</a></p>
+            <p class="footertext"><a href="../HTML/articles.html">More News</a></p>
+            <p class="footertext"><b><a href="../HTML/transportation.html">Transportation</a></b></p>
+        </div>
+
+        <div class="footergridcol">
+            <p><b>Our Socials</b></p>
+            <p><a href=""><i data-lucide="instagram" style="color: #fff;"></i></a>&nbsp;&nbsp; <a href=""><i data-lucide="twitter" style="color: white;"></i></a>&nbsp; <a href=""><i data-lucide="facebook" style="color: white;"></i></a>&nbsp; <a href=""><svg  xmlns="http://www.w3.org/2000/svg"  width="21"  height="21"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-tiktok"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M21 7.917v4.034a9.948 9.948 0 0 1 -5 -1.951v4.5a6.5 6.5 0 1 1 -8 -6.326v4.326a2.5 2.5 0 1 0 4 2v-11.5h4.083a6.005 6.005 0 0 0 4.917 4.917z" /></svg></a></p>
+            <p>Copyright © Eman Ghacham. All rights reserved.</p>
+            <p><b>Subscribe</b></p>
+            <p>Sign up to our newsletter!</p>
+                <div class="nltext">
+                <input type="email" placeholder="Email">
+              </div>
+        </div>
+    </div>
+    
+  </footer>
+
+
+
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+    lucide.createIcons();
+</script>
+
+
+
+</html>
+

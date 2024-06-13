@@ -1,0 +1,1033 @@
+@import url("https://use.typekit.net/jie5nhr.css");
+@import url("https://use.typekit.net/klb5zdw.css");
+@import url('~lucide-static/font/Lucide.css');
+
+* 
+    {
+        box-sizing: border-box;
+    }
+
+body 
+    {
+        font-family: proxima-nova, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+h1, h2, h3, h4, h5, h6 
+    {
+        font-family: lemonde-journal, sans-serif;
+    }
+
+
+
+/* Navigation Bar */
+.navbar 
+    {
+        background-color: purple;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 999;
+        text-align: center;
+        height: 55px;
+    }
+
+
+.navbar ul 
+    {
+        list-style-type: none;
+        position: relative;
+        top: 0px;
+        margin: 0;
+        padding:0;
+        background-color: #315098;
+        font-size: 16px;
+    }
+
+.navbar li 
+    {
+        display: inline-block;
+    }
+
+.navbar li a 
+    {
+        color: #fff;
+        display: block;
+        padding: 20px 30px;
+        text-decoration: none;
+        -o-transition:.5s;
+        -ms-transition:.5s;
+        -moz-transition:.5s;
+        -webkit-transition:.5s;
+    }
+
+.navbar li a:hover 
+    {
+        color: #fff!important;
+        background-color: #8CA8BE;
+    }
+
+.navbar ul ul 
+    {
+        position: absolute;
+        top: 100%;
+        display: none;
+    }
+
+.navbar ul ul li 
+    {
+        display: block;
+        width: 147px;
+    }
+
+.navbar li:hover ul 
+    {
+        display: block;
+        text-decoration: none;
+    }
+
+.navbar ul ul li a:hover 
+    {
+        background-color: #8CA8BE;
+        text-decoration: none; 
+    }
+
+.drop 
+    {
+        background: blue;
+        width:120px;
+        top:100%;
+        right: 20px;
+        padding:6px 0px;
+        margin:10px -20px;
+        z-index:10000000;
+        display:none;
+        text-align:center;
+    }
+
+.drop::before 
+    {
+        width:0;
+        height:0;
+        content:"";
+        position:absolute;
+        margin-left:-10px;
+        top:-10px;
+    }
+
+.lucide 
+    {
+        color: #fff;
+        width: 20px;
+        height: 20px;
+        stroke-width: 2px;
+    }
+
+searchbar 
+    {
+        position:absolute;
+    }
+
+input[type=email]
+    {
+        width: 200px;
+        height: 28px;
+        top: 0px; /* add this /
+        left: 0px; / add this /
+        position: absolute; / add this */
+        background-color: #edede9;
+        border: 0px;
+        border-radius: 20px;
+        font-family: proxima-nova;
+        padding-left: 13px;
+    }
+
+
+      
+
+/*Header*/
+.homepagecontainer 
+    {
+        position: relative;
+        text-align: center;
+        color: #BC002D;
+        height: 650px;
+        width: 100vw;
+    }
+
+.homepageimage
+    {
+        height: 80vh;
+        width: 100%;
+        object-fit: cover;
+    }
+
+.homepagetitle 
+    {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 6vw;
+        font-weight: bold;
+        font-family: lemonde-journal, sans-serif;
+        z-index: 1;
+        color: #BC002D;
+    }
+    
+.homepagesubheading 
+    {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 1.8vw;
+        z-index: 1;
+        color: #BC002D;
+        border-radius: 10px;
+    }
+
+
+    
+
+/*next adventure*/
+.homepagewhy 
+    {
+        overflow: hidden;
+        position: relative;
+        margin: auto;
+        margin-top: 130px;
+        font-size: 1.3vw;
+        z-index: 2;
+    }
+    
+.homepagewhycontent 
+    {
+        overflow: hidden;
+    }
+    
+.homepagewhyimage 
+    {
+        float: right;
+        width: 40vw;
+        height: 60vh;
+        border-radius: 20px;
+        object-fit: cover;
+        margin-left: .5vw;
+        margin-top: 5vh;
+    }
+
+.homepagewhytext
+    {
+        float:left;
+        margin: auto;
+        width: 50%;
+    }
+
+
+
+
+
+/*History*/
+.homepagehistory 
+    {
+        position: relative;
+        margin: auto;
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-top: 90px;
+        margin-bottom: 370px;
+        font-size: 1.3vw;
+        width: 80%;
+        display: block;
+        background-color: #fff;
+        max-height: 1000px;
+    }
+
+.homepagehistorycontent 
+    {
+        overflow: visible;
+        height: 1000px;
+    }
+
+.homepagehistoryimage 
+    {
+        float: left;
+        width: 40vw;
+        height: 80vh;
+        border-radius: 20px;
+        margin-right: 1vw;
+        margin-top: 5vh;
+    }
+
+.homepagehistorytext 
+    {
+        float: right;
+        width: 45%; /* Adjust the width as needed */
+        margin: auto;
+        max-height: 1000px;
+    }
+
+.popcity 
+    {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+.popcitysub 
+    {
+        font-size: 20px;
+    }
+
+
+
+
+
+/*Gallery*/
+.homepagegallery
+    {
+        position: relative;
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-top: 100px;
+        height: 400px;
+        display: block;
+        background-color: #fff;
+        margin-bottom: 500px;
+
+    }
+
+.homepagegalleryrow 
+    {
+        overflow: visible;
+        display: flex;
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-top: 90px;
+        height: 1500px;
+
+    }
+      
+.homepagegallerycolumn 
+    {
+        flex: 25%;
+        max-width: 25%;
+        padding: 0 4px;
+        height: 100vh;
+    }
+      
+.homepagegallerycolumn img 
+    {
+        margin-top: 10px;
+        vertical-align: middle;
+        width: 100%;
+        border-radius: 20px;
+
+    }
+
+.homepagegallerytitle
+    {
+        margin-left: 100px;
+        margin-bottom: -65px;
+        margin-top: 80px;
+        font-size: 2vw;
+    }
+
+
+
+
+/*Newsletter*/
+.homepagenewsletterdiv
+    {
+        background-color: #FBD0E0;
+        margin-top: 80px;
+        width: 100%;
+        height: 220px;
+        align-content: center;
+        padding: 20px;
+    }
+
+    .homepagenewsletterdiv input[type=text] 
+    {
+        width: 40%;
+        height: 45px;
+        padding: 12px;
+        border: 0px;
+        border-radius: 80px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+    }
+    
+
+
+
+
+
+
+
+
+/*tokyo DESTINATION PAGE */
+
+/*header*/
+.tokyocontainer 
+    {
+        position: relative;
+        text-align: left;
+        color: #fff;
+        height: 70vh;
+        width: 100vw;
+    }
+
+.tokyoimage
+    {
+        height: 80vh;
+        width: 100%;
+        object-fit: cover;
+    }
+
+
+
+
+/*history of tokyo*/
+.tokyohistory
+    {
+        position: relative;
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-top: 130px;
+        font-size: 1.3vw;
+    }
+
+
+.tokyohistoryimage
+    {
+        float: right;
+        width: 30vw;
+        height: 10vh;
+        margin-left: 5vw;
+        border-radius: 20px;
+        object-fit:cover;
+    }
+
+
+
+/*blur*/
+.tokyothings img
+    {
+        transition: 0.5s ease;
+        width: 25vw;
+        border-radius: 20px;
+        object-fit: cover;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 10px;
+        margin-top: 50px;
+    }
+        
+.tokyothings img:hover 
+    {
+        -webkit-filter: blur(3px);
+        transition: .5s ease;
+    }
+
+
+
+
+/*Map*/
+.tokyomapdiv
+    {
+        position: relative;
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-top: 130px;
+        margin-bottom: 200px;
+    }
+
+
+.tokyomapcontainer
+    {
+        width: 45vw;
+        height: 60vh;
+        border: none;
+        border-radius: 20px;
+        margin-left: 20px;
+    }
+
+.tokyomaptitle
+    {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+.tokyomapsub
+    {
+        font-size: 16px;
+        margin-top: -10px;
+        margin-bottom: 20px;
+    }
+
+.tokyomapdiv h1
+    {
+        margin-bottom: 30px;
+    }
+
+
+
+
+
+
+
+
+
+    
+/*Footer*/
+footer 
+    {
+        text-align: left;
+        padding: 20px;
+        background-color: #8ca8be;
+        color: #fff;
+    }
+
+.footergridcontainer 
+    {
+        display: grid;
+        min-height: 300px;
+        grid-template-columns: auto auto auto auto;
+        background-color: #8ca8be;
+        background-size: cover;
+        padding:40px;
+        column-gap: 0px;
+        width: 1000px;
+        margin: auto;
+    }
+
+.footergridcol 
+    {
+        color: #fff;
+    }
+
+.footergridcol a 
+    {
+        color: #fff;
+    }
+
+/* search bar */
+
+searchbar 
+    {
+        position:absolute;
+    }
+
+.searchbar input[type=text]
+    {
+        width: 150px;
+        height: 28px;
+        bottom: 9px; /* add this */
+        right: 180px; /* add this */
+        position: absolute; /* add this */
+        background-color: #edede9;
+        border: 0px;
+        border-radius: 20px;
+        font-family: proxima-nova;
+        padding-left: 13px;
+    }
+
+
+/*Subscribe */
+.subscribediv
+    {
+        margin-left: auto;
+        text-decoration: none;
+        color: black;
+        padding-right: 40px;
+    }
+
+.subscribeemail
+    {
+        width:100%;
+        padding:12px;
+        border:0px;
+        border-radius:20px;
+        margin-top: -25px;
+    }
+
+
+
+
+
+/*grid hover*/
+
+    
+
+/*header slideshow*/
+* 
+    {
+        box-sizing: border-box;
+        max-height: 650px;
+    }
+    
+.image-slideshow 
+    {
+        /*max-width: 1400px;*/
+        width: 100%;
+        position: relative;
+        margin: auto;
+     }
+    
+img 
+    {
+        width: 100%;
+        object-fit: cover;
+    }
+    
+.fade 
+    {
+        animation-name: fade;
+        animation-duration: 2s;
+        animation-timing-function: ease-out;
+    }
+    
+@keyframes fade 
+    {
+        from {opacity: .8;}
+        to {opacity: 1}
+    }
+    
+.slideshowcap 
+    {
+        background-color: rgba(255,255,255,0.8);
+        position: absolute;
+        text-align: left;
+        bottom: 100px;
+        left:200px;
+        padding: 8px 12px;
+    }
+
+
+
+
+
+/*Header*/
+.homepagecontainer 
+    {
+        position: relative;
+        text-align: center;
+        color: #BC002D;
+        height: 650px;
+        width: 100vw;
+    }
+
+.homepageimage
+    {
+        height: 80vh;
+        width: 100%;
+        object-fit: cover;
+    }
+
+.homepagetitle 
+    {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 6vw;
+        font-weight: bold;
+        font-family: lemonde-journal, sans-serif;
+        z-index: 1;
+        color: #BC002D;
+    }
+    
+.homepagesubheading 
+    {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 1.8vw;
+        z-index: 1;
+        color: #BC002D;
+        border-radius: 10px;
+    }
+
+
+    
+
+/*Why / your next adventure awaits*/
+.homepagewhy 
+    {
+        position: relative;
+        margin: auto;
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-top: 130px;
+        font-size: 1.3vw;
+    }
+    
+.homepagewhyimage 
+    {
+        float: right;
+        width: 30vw;
+        height: 60vh;
+        border-radius: 20px;
+        object-fit: cover;
+        margin-left: 1vw;
+        margin-top: 5vh;
+    }
+
+.homepagewhytext
+    {
+        float:left;
+        margin: auto;
+        width: 60%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Newsletter*/
+.homepagenewsletterdiv
+    {
+        background-color: #FBD0E0;
+        margin-top: 80px;
+        width: 100%;
+        height: 220px;
+        align-content: center;
+        padding: 20px;
+    }
+
+
+
+
+
+/*tokyo DESTINATION PAGE */
+
+/*header*/
+.tokyocontainer 
+    {
+        position: relative;
+        text-align: left;
+        color: #fff;
+        height: 70vh;
+        width: 100vw;
+    }
+
+.tokyoimage
+    {
+        height: 80vh;
+        width: 100%;
+        object-fit: cover;
+    }
+
+.tokyotitle
+    {
+        position:absolute;
+        top:60%;
+        left:3%;
+        font-size: 6vw;
+        font-weight: bold;
+        font-family: lemonde-journal, sans-serif;
+        color: #BC002D;
+    }
+
+.tokyosubheading
+    {
+        position: absolute;
+        top: 80%;
+        left: 3%;
+        right:30%;
+        font-size: 1.8vw;
+        color: #BC002D;
+    }
+
+
+
+/*history*/
+.tokyohistory
+    {
+        overflow: visible;
+        position: relative;
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-bottom: 150px;
+        font-size: 1.3vw;
+    }
+
+
+.tokyohistoryimage
+    {
+        float: right;
+        width: 30vw;
+        height: 100vh;
+        margin-left: 5vw;
+        border-radius: 20px;
+        object-fit: cover;
+    }
+
+
+
+/*blur*/
+.tokyothings img
+    {
+        transition: 0.5s ease;
+        width: 25vw;
+        border-radius: 20px;
+        object-fit: cover;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 10px;
+        margin-top: 50px;
+    }
+    
+.tokyothings img:hover 
+    {
+        -webkit-filter: blur(3px);
+        transition: .5s ease;
+    }
+
+
+
+
+/*Map*/
+.tokyomapdiv
+    {
+        overflow: hidden;
+        position: relative;
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-top: 130px;
+        margin-bottom: 200px;
+    }
+
+
+.tokyomapcontainer
+    {
+        width: 45vw;
+        height: 60vh;
+        border: none;
+        border-radius: 20px;
+        margin-left: 20px;
+    }
+
+.tokyomaptitle
+    {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+.tokyomapsub
+    {
+        font-size: 20px;
+        margin-bottom: 20px;
+        margin-right: 55%;
+    }
+
+.tokyomapdiv h1
+    {
+        margin-bottom: 30px;
+    }
+
+
+
+
+
+
+
+
+
+    
+
+
+
+/*Subscribe */
+.subscribediv
+    {
+        margin-left: auto;
+        text-decoration: none;
+        color: black;
+        padding-right: 40px;
+    }
+
+.subscribeemail
+    {
+        width:100%;
+        padding:12px;
+        border:0px;
+        border-radius:20px;
+        margin-top: -25px;
+    }
+
+
+
+
+/*slideshow button*/
+.slidebutton 
+    {
+        border:none;
+        display:inline-block;
+        padding:8px 16px;
+        vertical-align:middle;
+        overflow:hidden;
+        text-decoration:none;
+        color:inherit;
+        background-color:inherit;
+        text-align:center;
+        cursor:pointer;
+        white-space:nowrap;
+        color:#fff!important;
+        /*background-color:#000!important;*/
+        transition: 0.6s ease;
+    }
+    
+.slidebutton:hover 
+    {
+        color: #000!important;
+        background-color: #8ca8be!important;
+    }
+
+    
+    
+.st 
+    {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 6vw;
+        font-weight: bold;
+        font-family: lemonde-journal, sans-serif;
+        z-index: 1;
+        color: #fff;
+        text-shadow: 1px 1px 2px black, 0 0 2em grey, 0 0 0.2em grey;
+    }
+    
+.cap 
+    {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        text-align: center;
+        transform: translateX(-50%);
+        font-size: 1.8vw;
+        z-index: 1;
+        color: #fff;
+        border-radius: 10px;
+        text-shadow: 1px 1px 2px black, 0 0 2em grey, 0 0 0.2em grey;
+    }
+    
+.slidebutton 
+    {
+        border:none;
+        display:inline-block;
+        padding:8px 16px;
+        vertical-align:middle;
+        overflow:hidden;
+        text-decoration:none;
+        color:inherit;
+        background-color:inherit;
+        text-align:center;
+        cursor:pointer;
+        white-space:nowrap;
+        color:#fff!important;
+        /*background-color:#000!important;*/
+        transition: 0.6s ease;
+    }
+    
+.slidebutton:hover 
+    {
+        color: #000!important;
+        background-color: #8ca8be!important;
+    }
+
+    
+
+
+.slidebutton {
+        border:none;
+        display:inline-block;
+        padding:8px 16px;
+        vertical-align:middle;
+        overflow:hidden;
+        text-decoration:none;
+        color:inherit;
+        background-color:inherit;
+        text-align:center;
+        cursor:pointer;
+        white-space:nowrap;
+        color:#fff!important;
+        /*background-color:#000!important;*/
+        transition: 0.6s ease;
+    }
+    
+.slidebutton:hover {
+        color: #000!important;
+        background-color: #8ca8be!important;
+    }
+    
+    /* delete later maybe ^ ^*/
+    
+.sbleft {
+        color:#fff!important;
+        height: 30px!important;
+        width: 30px!important;
+        stroke-width: 4px!important;
+    }
+    
+.sbright 
+    {
+        color:#fff!important;
+        height: 30px!important;
+        width: 30px!important;
+        stroke-width: 4px!important;
+    }
+    
+.prev, .next 
+    {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+      
+.next 
+    {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+      
+.prev:hover, .next:hover 
+    {
+        background-color: rgba(140,168,190,0.8);
+    }
+    
+.nltext 
+    {
+        position:absolute;
+    }

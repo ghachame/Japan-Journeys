@@ -1,0 +1,226 @@
+<html>
+<head>
+    <title>Nara</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/homepage.css">
+</head>
+
+
+
+<!-- Navigation Bar -->
+<nav class="navbar">
+    <ul>
+        <li style="float: left;"><a href="../html/homepage.html"><i data-lucide="plane"></i></a></li>
+        <li><a href="../html/homepage.html">Home</a></li>
+        <li>
+            <a href="#">Destinations</a>
+            <ul>
+                <li><a href="../HTML/tokyo.html">Tokyo</a></li>
+                <li ><a href="../HTML/nara.html">Nara</a></li>
+                <li><a href="../html/destination.html">Kyoto</a></li>
+                <li><a href="../HTML/sapporo.html">Sapporo</a></li>
+                <li><a href="../HTML/osaka.html">Osaka</a></li>
+            </ul>
+        </li>
+        <li><a href="../HTML/articles.html">Articles</a></li>
+        <li><a href="../HTML/transportation.html">Transportation</a></li>
+        <li style="float: right; text-align: center;"><a href="../HTML/bookmarks.html"><i data-lucide="bookmark"></i></a></li>
+    </ul>
+    <div class="searchbar">
+        <input type="text" placeholder="Search..">
+      </div>
+</nav>
+
+
+<!--header slideshow-->
+<div class="image-slideshow">
+    <div class="st">Nara</div>
+        <div class="cap" style="text-align: center;">Nara, Japan, boasts ancient temples and the iconic Great Buddha statue within Todai-ji temple complex.</div>
+    <div class="image fade">
+        <img src="https://images.pexels.com/photos/16807973/pexels-photo-16807973/free-photo-of-photo-of-todaiji-temple-in-nara-japan.jpeg">
+    </div>
+
+
+    <div class="image fade">
+        <img src="https://images.pexels.com/photos/3408348/pexels-photo-3408348.jpeg">
+    </div>
+
+    <div class="image fade">
+        <img src="https://images.pexels.com/photos/15845939/pexels-photo-15845939/free-photo-of-wild-deer-and-torii-gate-of-nara-park-in-japan.jpeg">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)"><i class="sbleft" data-lucide="chevron-left"></i></a>
+    <a class="next" onclick="plusSlides(1)"><i class="sbright" data-lucide="chevron-right"></i></a>
+</div>
+
+<script>
+var slideIndex = 1;
+var timer = null;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+    clearTimeout(timer);
+    showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+    clearTimeout(timer);
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("image");
+    var dots = document.getElementsByClassName("dot");
+    if (n==undefined){n = ++slideIndex}
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+    }
+
+    slides[slideIndex-1].style.display = "block";
+
+    timer = setTimeout(showSlides, 5000);
+}
+</script>
+
+
+<!--History-->
+<div class="kyotohistory">
+    <div class="kyotohistorycontent">
+    <img class="kyotohistoryimage" src="https://images.pexels.com/photos/5769586/pexels-photo-5769586.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+        <div class="kyotohistorytext">
+        <h2>History of Nara</h2>
+        <p>Nara, located in the Kansai region of Japan, served as the country's capital from 710 to 794, during the Nara period, marking the establishment of Japan's first permanent capital. This era saw the flourishing of Buddhism, the construction of grand temples such as Todai-ji and Horyu-ji, and the commissioning of monumental bronze statues, including the famous Great Buddha. Nara's rich history as a cultural and political center continues to be reflected in its well-preserved temples, shrines, and traditional architecture, making it a UNESCO World Heritage Site and a popular destination for tourists seeking to explore Japan's ancient past.
+            During its time as the capital, Nara experienced a significant cultural and artistic renaissance, with the ruling aristocracy actively promoting the arts and literature. The city became a center for the development of Japanese calligraphy, painting, and sculpture, with artists and artisans producing exquisite works that are still celebrated today. Despite the capital being moved to Kyoto in 794, Nara remained an important religious and cultural center, continuing to influence Japan's artistic and intellectual traditions. Today, Nara's rich history is preserved in its numerous historical sites, museums, and festivals, offering visitors a glimpse into the vibrant cultural tapestry of ancient Japan.
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!--things to do Jailline's hover MAKE SURE TO CHANGE LINKS-->
+<div class="gridsubtitle"><h2>Discover your Options</h2></div>
+<div class="grid-container">
+    <div class="grid-item">
+        <div class="grid_image-wrap"><a href="https://www.tripadvisor.com/Attractions-g298198-Activities-c57-Nara_Nara_Prefecture_Kinki.html"><img class="gridimage" src="https://images.pexels.com/photos/5236400/pexels-photo-5236400.jpeg"></a>
+    </div>
+    <div class="undercap">
+    <div class="gridtitle"><a href="https://www.tripadvisor.com/Attractions-g298198-Activities-c57-Nara_Nara_Prefecture_Kinki.html" style="text-decoration: none; color: black;">Nature & Outdoor</a></div>
+        </div>
+    </div>
+
+    
+    <div class="grid-item">
+        <div class="grid_image-wrap"><a href="https://www.visitnara.jp/lists-and-stories/story/traditional-crafts/"><img class="gridimage" src="https://cdn.pixabay.com/photo/2023/03/11/04/52/kohfukuji-temple-7843698_1280.jpg"></a>
+            <div class="grid_image-content">
+            </div>
+        </div>
+        <div class="undercap">
+            <div class="gridtitle"><a href="https://www.visitnara.jp/lists-and-stories/story/traditional-crafts/" style="text-decoration: none; color: black;">Traditions</a></div>
+        </div>
+    </div>
+
+    <div class="grid-item">
+        <div class="grid_image-wrap"><a href="https://livejapan.com/en/in-kansai/in-pref-nara/in-nara_ikoma_tenri/article-a2000162/"><img class="gridimage" src="https://cdn.pixabay.com/photo/2017/10/10/11/36/japan-2836889_1280.jpg"></a>
+        </div>
+        <div class="undercap">
+            <div class="gridtitle"><a href="https://livejapan.com/en/in-kansai/in-pref-nara/in-nara_ikoma_tenri/article-a2000162/" style="text-decoration: none; color: black;">Food & Drink</a></div>
+                </div>
+    </div> 
+
+    <div class="grid-item">
+        <div class="grid_image-wrap"><a href="https://www.gov-online.go.jp/eng/publicity/book/hlj/html/202012/202012_06_en.html"><img class="gridimage" src="https://cdn.pixabay.com/photo/2017/01/13/07/41/kyoto-1976538_1280.jpg"></a>
+        </div>
+        <div class="undercap">
+            <div class="gridtitle"><a href="https://www.gov-online.go.jp/eng/publicity/book/hlj/html/202012/202012_06_en.html" style="text-decoration: none; color: black;">Art & Culture</a></div>
+                </div>
+    </div>
+
+    <div class="grid-item">
+        <div class="grid_image-wrap"><a href="https://www.visitnara.jp/lists-and-stories/list/chill-out-southern-naras-relaxing-retreats/"><img class="gridimage" src="https://images.pexels.com/photos/2187432/pexels-photo-2187432.jpeg"></a>
+        </div>
+        <div class="undercap">
+            <div class="gridtitle"><a href="https://www.visitnara.jp/lists-and-stories/list/chill-out-southern-naras-relaxing-retreats/" style="text-decoration: none; color: black;">Relaxation</a></div>
+                </div>
+    </div>
+
+    <div class="grid-item">
+        <div class="grid_image-wrap"><a href="https://en.japantravel.com/events/nara"><img class="gridimage" src="https://cdn.pixabay.com/photo/2020/12/14/13/54/drums-5830943_1280.jpg"></a>
+        </div>
+        <div class="undercap">
+            <div class="gridtitle"><a href="https://en.japantravel.com/events/nara" style="text-decoration: none; color: black;">Events</a></div>
+                </div>
+    </div>  
+
+
+
+  </div>
+</div>
+
+
+
+
+<!--Make them clickable to each respective destinations page-->
+<div class="kyotomapdiv">
+<h1>Major Attractions in Nara</h1>
+       <iframe align="right" class="kyotomapcontainer" src="https://www.google.com/maps/d/embed?mid=1-pRqvsU7oERsMfqttz4jBudQON8&hl=en_US&ehbc=2E312F">
+        </iframe> 
+        <p class="kyotomaptitle">Todai-ji Temple</p>
+            <p class="kyotomapsub">Housing the iconic Great Buddha, Todai-ji is a renowned temple and UNESCO World Heritage Site, symbolizing Japan's rich cultural and religious history.</p>
+        <p class="kyotomaptitle">Nara Park</p>
+            <p class="kyotomapsub">Encompassing over 1,200 acres, Nara Park is celebrated for its tranquil atmosphere, picturesque ponds, and the sacred deer that roam freely, offering visitors a unique and memorable experience in nature.</p>
+        <p class="kyotomaptitle">Kasuga Taisha Shrine</p>
+            <p class="kyotomapsub">With its origins dating back to 768 AD, Kasuga Taisha Shrine stands as a testament to Japan's ancient Shinto traditions, captivating visitors with its vermilion-colored structures, serene forest setting, and thousands of hanging lanterns that create a mystical ambiance, making it a must-visit destination in Nara.
+            </p>
+</div>
+
+
+
+<footer>
+    <div class="footergridcontainer">
+        <div class="footergridcol">
+            <p><b>Destinations</b></p>
+            <p class="footertext"><a href="../HTML/tokyo.html">Tokyo</a></p>
+            <p class="footertext"><a href="../HTML/destination.html">Kyoto</a></p>
+            <p class="footertext"><a href="../HTML/osaka.html">Osaka</a></p>
+            <p class="footertext"><a href="../HTML/sapporo.html">Sapporo</a></p>
+            <p class="footertext"><a href="../HTML/nara.html">Nara</a></p>
+        </div>
+
+        <div class="footergridcol">
+            <p class="footertext"><b><a href="../HTML/articles.html">Articles</a></b></p>
+            <p class="footertext"><a href="../HTML/articles.html">Latest</a></p>
+            <p class="footertext"><a href="../HTML/articles.html">More News</a></p>
+            <p class="footertext"><b><a href="../HTML/transportation.html">Transportation</a></b></p>
+        </div>
+
+        <div class="footergridcol">
+            <p><b>Our Socials</b></p>
+            <p><a href=""><i data-lucide="instagram" style="color: #fff;"></i></a>&nbsp;&nbsp; <a href=""><i data-lucide="twitter" style="color: white;"></i></a>&nbsp; <a href=""><i data-lucide="facebook" style="color: white;"></i></a>&nbsp; <a href=""><svg  xmlns="http://www.w3.org/2000/svg"  width="21"  height="21"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-tiktok"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M21 7.917v4.034a9.948 9.948 0 0 1 -5 -1.951v4.5a6.5 6.5 0 1 1 -8 -6.326v4.326a2.5 2.5 0 1 0 4 2v-11.5h4.083a6.005 6.005 0 0 0 4.917 4.917z" /></svg></a></p>
+            <p>Copyright © Maxine Cabigquez. All rights reserved.</p>
+            <p><b>Subscribe</b></p>
+            <p>Sign up to our newsletter!</p>
+                <div class="nltext">
+                <input type="email" placeholder="Email">
+              </div>
+        </div>
+    </div>
+    
+  </footer>
+
+
+
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+    lucide.createIcons();
+</script>
+
+
+
+</html>
+

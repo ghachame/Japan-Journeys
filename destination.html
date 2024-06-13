@@ -1,0 +1,226 @@
+<html>
+<head>
+    <title>Kyoto</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/homepage.css">
+</head>
+
+
+
+<!-- Navigation Bar -->
+<nav class="navbar">
+    <ul>
+        <li style="float: left;"><a href="../html/homepage.html"><i data-lucide="plane"></i></a></li>
+        <li><a href="../html/homepage.html">Home</a></li>
+        <li>
+            <a href="#">Destinations</a>
+            <ul>
+                <li><a href="../HTML/tokyo.html">Tokyo</a></li>
+                <li ><a href="../HTML/nara.html">Nara</a></li>
+                <li><a href="../html/destination.html">Kyoto</a></li>
+                <li><a href="../HTML/sapporo.html">Sapporo</a></li>
+                <li><a href="../HTML/osaka.html">Osaka</a></li>
+            </ul>
+        </li>
+        <li><a href="../HTML/articles.html">Articles</a></li>
+        <li><a href="../HTML/transportation.html">Transportation</a></li>
+        <li style="float: right; text-align: center;"><a href="../HTML/bookmarks.html"><i data-lucide="bookmark"></i></a></li>
+    </ul>
+    <div class="searchbar">
+        <input type="text" placeholder="Search..">
+      </div>
+</nav>
+
+
+<!--header slideshow-->
+<div class="image-slideshow">
+    <div class="st">Kyoto</div>
+        <div class="cap">Discover Kyoto, Japan's cultural treasure trove, where ancient temples, serene gardens, and traditional tea ceremonies await.</div>
+    <div class="image fade">
+        <img src="https://images.pexels.com/photos/356269/pexels-photo-356269.jpeg">
+    </div>
+
+
+    <div class="image fade">
+        <img src="https://images.pexels.com/photos/1279309/pexels-photo-1279309.jpeg">
+    </div>
+
+    <div class="image fade">
+        <img src="https://images.pexels.com/photos/17080578/pexels-photo-17080578/free-photo-of-kiyomizu-dera-niomon-gate-temple-in-kyoto.jpeg">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)"><i class="sbleft" data-lucide="chevron-left"></i></a>
+    <a class="next" onclick="plusSlides(1)"><i class="sbright" data-lucide="chevron-right"></i></a>
+</div>
+
+<script>
+var slideIndex = 1;
+var timer = null;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+    clearTimeout(timer);
+    showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+    clearTimeout(timer);
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("image");
+    var dots = document.getElementsByClassName("dot");
+    if (n==undefined){n = ++slideIndex}
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+    }
+
+    slides[slideIndex-1].style.display = "block";
+
+    timer = setTimeout(showSlides, 5000);
+}
+</script>
+
+
+<!--History-->
+<div class="kyotohistory">
+    <div class="kyotohistorycontent">
+    <img class="kyotohistoryimage" src="https://images.pexels.com/photos/5769586/pexels-photo-5769586.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+        <div class="kyotohistorytext">
+        <h2>History of Kyoto</h2>
+        <p>Kyoto, once known as Heian-kyō, served as the imperial capital of Japan for over a thousand years, from 794 AD until the capital was relocated to Tokyo in 1868. This period, known as the Heian period, was characterized by remarkable cultural and artistic flourishing, with Kyoto at its heart. During this time, the city witnessed the rise of Japanese literature, such as the famous "Tale of Genji" by Murasaki Shikibu, and the development of traditional arts like tea ceremony, ikebana (flower arranging), and Noh theater.<br><br>
+        Throughout its history, Kyoto faced numerous challenges, including wars, fires, and political upheavals. However, it always managed to rebuild and preserve its cultural heritage. The city's layout reflects its historical significance, with its grid-like streets designed in accordance with traditional Chinese geomancy principles. Many of Kyoto's iconic landmarks, including Kinkaku-ji (the Golden Pavilion), Kiyomizu-dera Temple, and Nijo Castle, date back to this era, offering glimpses into the city's illustrious past.<br><br>    
+        In the modern era, Kyoto has evolved into a vibrant blend of tradition and innovation. While it continues to honor its cultural legacy through annual festivals, rituals, and preservation efforts, it also thrives as a center for technology, education, and tourism. Today, Kyoto stands as a testament to Japan's enduring spirit, where ancient traditions coexist harmoniously with contemporary life, inviting visitors from around the world to explore its timeless beauty and cultural riches.<br><br></p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!--things to do Jailline's hover MAKE SURE TO CHANGE LINKS-->
+<div class="gridsubtitle"><h2>Discover your Options</h2></div>
+<div class="grid-container">
+    <div class="grid-item">
+        <div class="grid_image-wrap"><a href="https://www.worldnomads.com/explore/eastern-asia/japan/top-kyoto-outdoor-adventure-activities"><img class="gridimage" src="https://cdn.pixabay.com/photo/2019/12/10/13/45/japan-4685882_1280.jpg"></a>
+    </div>
+    <div class="undercap">
+    <div class="gridtitle"><a href="https://www.worldnomads.com/explore/eastern-asia/japan/top-kyoto-outdoor-adventure-activities" style="text-decoration: none; color: black;">Nature & Outdoor</a></div>
+        </div>
+    </div>
+
+    
+    <div class="grid-item">
+        <div class="grid_image-wrap"><a href="https://alljapantours.com/japan/travel/when-to-go/Cherry-Blossoms-in-Japan/"><img class="gridimage" src="https://images.pexels.com/photos/2890017/pexels-photo-2890017.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"></a>
+            <div class="grid_image-content">
+            </div>
+        </div>
+        <div class="undercap">
+            <div class="gridtitle"><a href="https://alljapantours.com/japan/travel/when-to-go/Cherry-Blossoms-in-Japan/" style="text-decoration: none; color: black;">Traditions</a></div>
+        </div>
+    </div>
+
+    <div class="grid-item">
+        <div class="grid_image-wrap"><a href="https://www.ninjafoodtours.com/kyoto-food-guide/"><img class="gridimage" src="https://images.pexels.com/photos/1581484/pexels-photo-1581484.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"></a>
+        </div>
+        <div class="undercap">
+            <div class="gridtitle"><a href="https://www.ninjafoodtours.com/kyoto-food-guide/" style="text-decoration: none; color: black;">Food & Drink</a></div>
+                </div>
+    </div> 
+
+    <div class="grid-item">
+        <div class="grid_image-wrap"><a href="https://www.insidekyoto.com/kyoto-arts"><img class="gridimage" src="https://images.pexels.com/photos/1498273/pexels-photo-1498273.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"></a>
+        </div>
+        <div class="undercap">
+            <div class="gridtitle"><a href="https://www.insidekyoto.com/kyoto-arts" style="text-decoration: none; color: black;">Art & Culture</a></div>
+                </div>
+    </div>
+
+    <div class="grid-item">
+        <div class="grid_image-wrap"><a href="https://www.jal.co.jp/ar/en/guide-to-japan/destinations/articles/kyoto/Three-Wellness-Destinations-in-Kyoto.html"><img class="gridimage" src="https://images.pexels.com/photos/5745818/pexels-photo-5745818.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"></a>
+        </div>
+        <div class="undercap">
+            <div class="gridtitle"><a href="https://www.jal.co.jp/ar/en/guide-to-japan/destinations/articles/kyoto/Three-Wellness-Destinations-in-Kyoto.html" style="text-decoration: none; color: black;">Relaxation</a></div>
+                </div>
+    </div>
+
+    <div class="grid-item">
+        <div class="grid_image-wrap"><a href="https://www.insidekyoto.com/kyoto-festivals-events"><img class="gridimage" src="https://images.pexels.com/photos/20704796/pexels-photo-20704796/free-photo-of-a-large-building-with-many-people-walking-around-it.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"></a>
+        </div>
+        <div class="undercap">
+            <div class="gridtitle"><a href="https://www.insidekyoto.com/kyoto-festivals-events" style="text-decoration: none; color: black;">Events</a></div>
+                </div>
+    </div>  
+
+
+
+  </div>
+</div>
+
+
+
+
+<!--Make them clickable to each respective destinations page-->
+<div class="kyotomapdiv">
+<h1>Major Attractions in Kyoto</h1>
+       <iframe align="right" class="kyotomapcontainer" src="https://www.google.com/maps/d/embed?mid=17mw9tQ1TdH6pVaIK9Q8dWdiwUcw&hl=en&ehbc=2E312F">
+        </iframe> 
+        <p class="kyotomaptitle">Kinkaku-ji (The Golden Pavilion)</p>
+            <p class="kyotomapsub">This iconic Zen Buddhist temple is covered in gold leaf, reflecting beautifully on the surrounding pond. It's one of Kyoto's most famous landmarks and a UNESCO World Heritage Site.</p>
+        <p class="kyotomaptitle">Fushimi Inari Taisha</p>
+            <p class="kyotomapsub">Known for its thousands of vibrant orange torii gates, Fushimi Inari Taisha is a Shinto shrine dedicated to Inari, the god of rice and prosperity. Visitors can hike through the forested trails lined with torii gates, offering stunning views of Kyoto from the mountaintop.</p>
+        <p class="kyotomaptitle">Kiyomizu-dera</p>
+            <p class="kyotomapsub">This historic temple, founded in 778 AD, is perched on a hillside and offers panoramic views of Kyoto. Its main hall, built without the use of nails, extends out over the hillside and is a symbol of Kyoto's architectural prowess..</p>
+</div>
+
+
+
+<footer>
+    <div class="footergridcontainer">
+        <div class="footergridcol">
+            <p><b>Destinations</b></p>
+            <p class="footertext"><a href="../HTML/tokyo.html">Tokyo</a></p>
+            <p class="footertext"><a href="../HTML/destination.html">Kyoto</a></p>
+            <p class="footertext"><a href="../HTML/osaka.html">Osaka</a></p>
+            <p class="footertext"><a href="../HTML/sapporo.html">Sapporo</a></p>
+            <p class="footertext"><a href="../HTML/nara.html">Nara</a></p>
+        </div>
+
+        <div class="footergridcol">
+            <p class="footertext"><b><a href="../HTML/articles.html">Articles</a></b></p>
+            <p class="footertext"><a href="../HTML/articles.html">Latest</a></p>
+            <p class="footertext"><a href="../HTML/articles.html">More News</a></p>
+            <p class="footertext"><b><a href="../HTML/transportation.html">Transportation</a></b></p>
+        </div>
+
+        <div class="footergridcol">
+            <p><b>Our Socials</b></p>
+            <p><a href=""><i data-lucide="instagram" style="color: #fff;"></i></a>&nbsp;&nbsp; <a href=""><i data-lucide="twitter" style="color: white;"></i></a>&nbsp; <a href=""><i data-lucide="facebook" style="color: white;"></i></a>&nbsp; <a href=""><svg  xmlns="http://www.w3.org/2000/svg"  width="21"  height="21"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-tiktok"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M21 7.917v4.034a9.948 9.948 0 0 1 -5 -1.951v4.5a6.5 6.5 0 1 1 -8 -6.326v4.326a2.5 2.5 0 1 0 4 2v-11.5h4.083a6.005 6.005 0 0 0 4.917 4.917z" /></svg></a></p>
+            <p>Copyright © Maxine Cabigquez. All rights reserved.</p>
+            <p><b>Subscribe</b></p>
+            <p>Sign up to our newsletter!</p>
+                <div class="nltext">
+                <input type="email" placeholder="Email">
+              </div>
+        </div>
+    </div>
+    
+  </footer>
+
+
+
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+    lucide.createIcons();
+</script>
+
+
+
+</html>
+
